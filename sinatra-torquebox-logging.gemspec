@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.version       = Sinatra::TorqueBox::Logging::VERSION
 
   gem.add_dependency 'torquebox'
-  gem.add_dependency 'sinatra'
+  gem.add_dependency 'sinatra', '>= 1.3.0'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
