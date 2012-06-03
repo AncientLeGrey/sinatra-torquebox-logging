@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/AncientLeGrey/sinatra-torquebox-logging.png?branch=master)](http://travis-ci.org/AncientLeGrey/sinatra-torquebox-logging)
+
 # Sinatra::TorqueBox::Logging
 
 Sinatra uses Rack::CommonLogger by default, which writes to env['rack.errors'].
