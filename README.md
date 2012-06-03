@@ -7,7 +7,7 @@ This Sinatra extension enables logging to the TorqueBox server.log
 
 Add this line to your application's Gemfile:
 
-    gem 'sinatra-torquebox-logging'
+    gem 'sinatra-torquebox-logging', :git => 'git://github.com/AncientLeGrey/sinatra-torquebox-logging.git'
 
 And then execute:
 
@@ -15,7 +15,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sinatra-torquebox-logging
+    $ gem install sinatra-torquebox-logging (not yet released on rubygems.org)
 
 ## Usage
 
@@ -24,7 +24,7 @@ Or install it yourself as:
       configure do
         register Sinatra::TorqueBox::Logging
       end
-      get('/') do
+      get '/' do
         logger.info 'Message will show up in TorqueBox server.log'
       end
     end
