@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-    require 'sinatra-torquebox-logging'
+    require 'sinatra/torquebox/logging'
     class MyApp < Sinatra::Base
       configure do
         register Sinatra::TorqueBox::Logging

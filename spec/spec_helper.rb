@@ -24,5 +24,5 @@ end
 
 require 'torquebox/rack/logger'
 require 'torquebox/common_logger'
-require 'sinatra/torquebox/logging'
+require 'sinatra/torquebox/logging/extension'
 

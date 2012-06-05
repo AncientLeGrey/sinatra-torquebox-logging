@@ -1,5 +1,1 @@
-require 'sinatra/base'
-require 'torquebox'
-require 'torquebox/rack/logger'
-require 'torquebox/common_logger'
 require 'sinatra/torquebox/logging'
