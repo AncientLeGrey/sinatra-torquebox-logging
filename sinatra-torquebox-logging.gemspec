@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.summary       = 'Sinatra extension to enable logging to the TorqueBox server.log'
   gem.homepage      = 'https://github.com/AncientLeGrey/sinatra-torquebox-logging'
 
-  gem.files         = `git ls-files`.split($\)
+  gem.files         = `git ls-files`.split($\).select{ |f| f =~ /^[^\.]/ }
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = 'sinatra-torquebox-logging'
