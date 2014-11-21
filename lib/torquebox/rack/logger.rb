@@ -1,7 +1,7 @@
 module TorqueBox
   module Rack
     class Logger
-      def initialize(app, level = :info)
+      def initialize(app, level = ::Logger::INFO)
         @app, @level = app, level
       end
 
