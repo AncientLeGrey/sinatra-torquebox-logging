@@ -12,13 +12,13 @@ describe Sinatra::TorqueBox::Logging do
 
   context 'by default' do
     it 'enables logging' do
-      settings.logging.should be_true
+      expect(settings.logging).to be true
     end
 
     it 'actually writes to TorqueBox::Logger' do
-      logger.should_receive(:write).with('Sinatra::TorqueBox::Logging initialized')
-      logger.should_receive(:write).with('log message')
-      logger.should_receive(:write) # sinatras request logging
+      expect(logger).to receive(:write).with('Sinatra::TorqueBox::Logging initialized')
+      expect(logger).to receive(:write).with('log message')
+      expect(logger).to receive(:write) # sinatras request logging
       get('/')
     end
   end
@@ -27,7 +27,7 @@ describe Sinatra::TorqueBox::Logging do
     before { settings.logging = false }
 
     it 'writes nothing' do
-      logger.should_not_receive(:write)
+      expect(logger).not_to receive(:write)
       get('/')
     end
   end
